@@ -1,2 +1,3 @@
 # nvim-config
-neovim configuration
+
+neovim configuration by FrozenArcher
