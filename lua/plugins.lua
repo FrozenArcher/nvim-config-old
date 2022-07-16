@@ -8,5 +8,7 @@ return require("packer").startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
 	})
-    use {'neoclide/coc.nvim', branch = 'release'}
+	use({ "neoclide/coc.nvim", branch = "release" })
+	use("rafamadriz/neon")
+	use("nvim-lualine/lualine.nvim")
 end)
