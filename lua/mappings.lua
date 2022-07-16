@@ -18,3 +18,11 @@ nmap("<A-l>", ":BufferLineMoveNext", option)
 nmap("<A-h>", ":BufferLineMovePrev", option)
 nmap("<A-p>", ":BufferLinePick", option)
 nmap("<A-c>", ":BufferLinePickClose", option)
+
+-- Formatter
+nmap("<leader>f", ":Format", option)
+nmap("<leader>F", ":FormatWrite", option)
+
+-- Tagbar
+nmap("<F8>", ":TagbarToggle", option)
+nmap("<A-b>", ":TagbarOpen fj", option)

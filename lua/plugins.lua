@@ -4,11 +4,12 @@ return require("packer").startup(function(use)
 	use({ "akinsho/bufferline.nvim", tag = "v2.*" })
 	use("sainnhe/edge")
 	use("folke/tokyonight.nvim")
-	use({
-		"nvim-treesitter/nvim-treesitter",
-		run = ":TSUpdate",
-	})
+	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use({ "neoclide/coc.nvim", branch = "release" })
 	use("rafamadriz/neon")
 	use("nvim-lualine/lualine.nvim")
+	use("jiangmiao/auto-pairs")
+	use("mhartington/formatter.nvim")
+	use("preservim/tagbar")
+	use("tpope/vim-fugitive")
 end)
