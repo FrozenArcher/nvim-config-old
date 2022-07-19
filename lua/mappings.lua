@@ -26,3 +26,10 @@ nmap("<leader>F", ":FormatWrite", option)
 -- Tagbar
 nmap("<F8>", ":TagbarToggle", option)
 nmap("<A-b>", ":TagbarOpen fj", option)
+
+-- OneTerm
+nmap("<leader>t", ":OneTerm", option)
+
+-- FTerm
+vim.keymap.set("n", "<A-i>", '<CMD>lua require("FTerm").toggle()<CR>')
+vim.keymap.set("t", "<A-i>", '<C-\\><C-n><CMD>lua require("FTerm").toggle()<CR>')
