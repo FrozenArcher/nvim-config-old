@@ -16,4 +16,7 @@ return require("packer").startup(function(use)
 	use("petertriho/nvim-scrollbar")
 	use("LoricAndre/OneTerm.nvim")
 	use("numToStr/FTerm.nvim")
+	use("numToStr/Comment.nvim")
+
+	use("goolord/alpha-nvim")
 end)
