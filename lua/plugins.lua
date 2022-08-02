@@ -17,6 +17,9 @@ return require("packer").startup(function(use)
 	use("LoricAndre/OneTerm.nvim")
 	use("numToStr/FTerm.nvim")
 	use("numToStr/Comment.nvim")
-
+	use({
+		"pianocomposer321/yabs.nvim",
+		requires = { "nvim-lua/plenary.nvim" },
+	})
 	use("goolord/alpha-nvim")
 end)

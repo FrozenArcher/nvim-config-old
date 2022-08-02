@@ -6,9 +6,18 @@ require("formatter").setup({
 		go = {
 			require("formatter.filetypes.go").gofmt,
 		},
-		rust = {
-			require("formatter.filetypes.rust").rustfmt,
-		},
+		-- rust = {
+		-- 	function()
+		-- 		return {
+		-- 			exe = "cargo",
+		-- 			args = {
+		-- 				"+nightly",
+		-- 				"fmt",
+		-- 			},
+		-- 			stdin = true,
+		-- 		}
+		-- 	end,
+		-- },
 		python = {
 			require("formatter.filetypes.python").autopep8,
 		},
