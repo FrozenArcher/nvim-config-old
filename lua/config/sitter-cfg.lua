@@ -1,5 +1,31 @@
 require("nvim-treesitter.configs").setup({
-	ensure_installed = { "c", "lua", "rust", "vim", "cpp" },
+	ensure_installed = {
+		"bash",
+		"c",
+		"cmake",
+		"cpp",
+		"d",
+		"dockerfile",
+		"fish",
+		"go",
+		"gomod",
+		"gowork",
+		"html",
+		"http",
+		"java",
+		"javascript",
+		"json",
+		"json5",
+		"make",
+		"ninja",
+		"python",
+		"lua",
+		"rust",
+		"vim",
+		"toml",
+		"yaml",
+		"sql",
+	},
 
 	highlight = {
 		enable = true,
@@ -13,10 +39,10 @@ require("nvim-treesitter.configs").setup({
 	incremental_selection = {
 		enable = true,
 		keymaps = {
-			init_selection = "<CR>",
-			node_incremental = "<CR>",
-			node_decremental = "<BS>",
-			scope_incremental = "<TAB>",
+			init_selection = "gnn",
+			node_incremental = "grn",
+			scope_incremental = "grc",
+			node_decremental = "grm",
 		},
 	},
 })
@@ -26,4 +52,4 @@ local vim = vim
 vim.wo.foldmethod = "expr"
 vim.wo.foldexpr = "nvim_treesitter#foldexpr()"
 -- 默认不要折叠
-vim.wo.foldlevel = 99
+--vim.wo.foldlevel = 99
