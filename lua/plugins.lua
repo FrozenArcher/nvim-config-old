@@ -1,25 +1,32 @@
 return require("packer").startup(function(use)
-	use({ "kyazdani42/nvim-tree.lua" })
-	use("kyazdani42/nvim-web-devicons")
-	use({ "akinsho/bufferline.nvim", tag = "v2.*" })
-	use("sainnhe/edge")
-	use("folke/tokyonight.nvim")
+	-- Coding
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
-	use({ "neoclide/coc.nvim", branch = "release" })
-	use("rafamadriz/neon")
-	use("nvim-lualine/lualine.nvim")
 	use("jiangmiao/auto-pairs")
-	use("mhartington/formatter.nvim")
-	use("preservim/tagbar")
-	use("tpope/vim-fugitive")
 	use("fladson/vim-kitty")
-	use("petertriho/nvim-scrollbar")
-	use("LoricAndre/OneTerm.nvim")
-	use("numToStr/FTerm.nvim")
 	use("numToStr/Comment.nvim")
+
+	-- Utils
+	use("mhartington/formatter.nvim")
 	use({
 		"pianocomposer321/yabs.nvim",
 		requires = { "nvim-lua/plenary.nvim" },
 	})
+	use("LoricAndre/OneTerm.nvim")
+	use("numToStr/FTerm.nvim")
+	use("tpope/vim-fugitive")
+
+	-- Visual
+	use("kyazdani42/nvim-web-devicons")
+	use("sainnhe/edge")
+	use("folke/tokyonight.nvim")
+	use("rafamadriz/neon")
+
+	-- Views
+	use({ "kyazdani42/nvim-tree.lua" })
+	use({ "akinsho/bufferline.nvim", tag = "v2.*" })
+	use({ "neoclide/coc.nvim", branch = "release" })
+	use("nvim-lualine/lualine.nvim")
+	use("preservim/tagbar")
+	use("petertriho/nvim-scrollbar")
 	use("goolord/alpha-nvim")
 end)
