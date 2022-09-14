@@ -4,23 +4,22 @@ local vim = vim
 local lualine = require("lualine")
 
 local function lsp_status(status)
-    local shorter_stat = ''
-    for match in string.gmatch(status, "[^%s]+")  do
-        local err_warn = string.find(match, "^[WE]%d+", 0)
-        if not err_warn then
-            shorter_stat = shorter_stat .. ' ' .. match
-        end
-    end
-    return shorter_stat
+	local shorter_stat = ""
+	for match in string.gmatch(status, "[^%s]+") do
+		local err_warn = string.find(match, "^[WE]%d+", 0)
+		if not err_warn then
+			shorter_stat = shorter_stat .. " " .. match
+		end
+	end
+	return shorter_stat
 end
 
-
 local function get_coc_lsp()
-  local status = vim.fn['coc#status']()
-  if not status or status == '' then
-      return ''
-  end
-  return lsp_status(status)
+	local status = vim.fn["coc#status"]()
+	if not status or status == "" then
+		return ""
+	end
+	return lsp_status(status)
 end
 
 
@@ -67,7 +66,7 @@ local config = {
 			normal = { c = { fg = colors.fg, bg = colors.bg } },
 			inactive = { c = { fg = colors.fg, bg = colors.bg } },
 		},
-        globalstatus = true,
+		globalstatus = true,
 	},
 	sections = {
 		-- these are to remove the defaults
@@ -179,8 +178,8 @@ ins_left({
 
 ins_left({
 	-- Lsp server name .
-    get_coc_lsp,
-	icon = "  COC:",
+	get_coc_lsp,
+	icon = " COC:",
 	color = { fg = colors.fg, gui = "bold" },
 })
 
