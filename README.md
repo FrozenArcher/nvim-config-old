@@ -2,6 +2,16 @@
 
 neovim configuration
 
+## needed packages
+
+* (aur) nvim-packer-git
+* nodejs
+* npm
+* universal-ctags
+* clang
+* stylua
+
+
 ## main components
 
 ### plugin manager
