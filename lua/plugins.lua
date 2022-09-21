@@ -14,6 +14,11 @@ return require("packer").startup(function(use)
 	use("LoricAndre/OneTerm.nvim")
 	use("numToStr/FTerm.nvim")
 	use("tpope/vim-fugitive")
+	use("norcalli/nvim-colorizer.lua")
+	use({
+		"lewis6991/gitsigns.nvim",
+		tag = "release",
+	})
 
 	-- Visual
 	use("kyazdani42/nvim-web-devicons")
