@@ -10,6 +10,7 @@ neovim configuration
 * universal-ctags
 * clang
 * stylua
+* autopep8
 
 
 ## main components
