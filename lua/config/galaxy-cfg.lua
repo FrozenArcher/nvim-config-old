@@ -2,7 +2,7 @@ local gl = require("galaxyline")
 --local gps = require("nvim-gps")
 local gls = gl.section
 local extension = require("galaxyline.providers.extensions")
---local dap = require("dap")
+local dap = require("dap")
 
 gl.short_line_list = {
 	"LuaTree",
@@ -20,8 +20,18 @@ gl.short_line_list = {
 
 VistaPlugin = extension.vista_nearest
 
-local ProgFileTypes =
-	{ "lua", "python", "typescript", "typescriptreact", "react", "javascript", "javascriptreact", "rust", "go", "html" }
+local ProgFileTypes = {
+	"lua",
+	"python",
+	"typescript",
+	"typescriptreact",
+	"react",
+	"javascript",
+	"javascriptreact",
+	"rust",
+	"go",
+	"html",
+}
 
 -- for checking value in table
 local function has_value(tab, val)
@@ -118,13 +128,13 @@ local function get_coc_lsp()
 	return lsp_status(status)
 end
 
---local function get_debug_status()
---	local status = dap.status()
---	if not status or status == "" then
---		return ""
---	end
---	return "  " .. status
---end
+local function get_debug_status()
+	local status = dap.status()
+	if not status or status == "" then
+		return ""
+	end
+	return "  " .. status
+end
 
 function get_diagnostic_info()
 	if vim.fn.exists("*coc#rpc#start_server") == 1 then

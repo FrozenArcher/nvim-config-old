@@ -19,6 +19,7 @@ return require("packer").startup(function(use)
 		"lewis6991/gitsigns.nvim",
 		tag = "release",
 	})
+	use("mfussenegger/nvim-dap")
 
 	-- Visual
 	use("kyazdani42/nvim-web-devicons")
