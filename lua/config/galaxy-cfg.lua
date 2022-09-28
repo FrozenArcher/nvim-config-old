@@ -399,11 +399,11 @@ gls.left[14] = {
 	},
 }
 
-gls.left[15] = {
+gls.right[1] = {
 	CocStatus = {
 		provider = CocStatus,
 		highlight = { colors.green, colors.bg },
-		icon = "   ",
+		icon = "   COC",
 	},
 }
 
@@ -437,7 +437,7 @@ gls.left[15] = {
 --	},
 --}
 
-gls.right[1] = {
+gls.right[2] = {
 	FileFormat = {
 		provider = "FileFormat",
 		separator = " ",
