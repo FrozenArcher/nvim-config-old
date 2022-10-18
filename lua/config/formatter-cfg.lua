@@ -20,12 +20,22 @@ require("formatter").setup({
 		python = {
 			require("formatter.filetypes.python").autopep8,
 		},
-		c = {
-			require("formatter.filetypes.c").clangformat,
-		},
-		cpp = {
-			require("formatter.filetypes.cpp").clangformat,
-		},
+		-- c = {
+		-- 	function()
+		-- 		return {
+		-- 			exe = "clang-format --style=file --fallback-style=LLVM",
+		-- 			stdin = true,
+		-- 		}
+		-- 	end,
+		-- },
+		-- cpp = {
+		-- 	function()
+		-- 		return {
+		-- 			exe = "clang-format --style=file --fallback-style=LLVM",
+		-- 			stdin = true,
+		-- 		}
+		-- 	end,
+		-- },
 		["*"] = {
 			-- "formatter.filetypes.any" defines default configurations for any filetype
 			require("formatter.filetypes.any").remove_trailing_whitespace,
