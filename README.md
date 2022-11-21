@@ -2,7 +2,7 @@
 
 neovim configuration
 
-## needed packages
+## packages needed
 
 * (aur) nvim-packer-git
 * nodejs
