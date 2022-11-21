@@ -10,6 +10,7 @@ nmap("<A-s>", ":source %", { noremap = true })
 
 -- NvimTree
 nmap("<A-n>", ":NvimTreeToggle", option)
+nmap("<A-m>", ":NvimTreeFindFile", option)
 
 -- BufferLine
 nmap("<A-k>", ":BufferLineCycleNext", option)
