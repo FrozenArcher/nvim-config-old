@@ -2,7 +2,7 @@
 
 neovim configuration
 
-## packages needed
+## Requirements
 
 * (aur) nvim-packer-git
 * nodejs
@@ -12,8 +12,16 @@ neovim configuration
 * stylua
 * autopep8
 
+## Installation
 
-## main components
+```
+yay -S neovim nodejs npm universal-ctags clang stylua autopep8 nvim-packer-git
+git clone https://github.com/FrozenArcher/nvim-config.git ~/.config/nvim
+```
+
+Then run `nvim` to enter neovim. **Skip the errors**, and enter `:PackerUpdate` to install plugins.
+
+## Main components
 
 * plugin manager: packer.nvim
 * LSP: completion: coc.nvim
