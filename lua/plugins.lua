@@ -1,4 +1,7 @@
 return require("packer").startup(function(use)
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
+
 	-- Coding
 	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
 	use("jiangmiao/auto-pairs")

@@ -11,6 +11,7 @@ neovim configuration
 * clang
 * stylua
 * autopep8
+* tree-sitter-cli
 
 ## Installation
 
