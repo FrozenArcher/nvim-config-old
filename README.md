@@ -25,7 +25,7 @@ Then run `nvim` to enter neovim. **Skip the errors**, and enter `:PackerUpdate` 
 ## Main components
 
 * plugin manager: packer.nvim
-* LSP: completion: coc.nvim
+* language server: coc.nvim
 * colorscheme: neon
 * file explorer: nvim-tree
 * tabline: bufferline
