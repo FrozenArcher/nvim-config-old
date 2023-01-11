@@ -1,3 +1,6 @@
+local c_cpp_format_cmd =
+	'clang-format --style="{BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4}"'
+
 require("formatter").setup({
 	filetype = {
 		lua = {
@@ -14,16 +17,13 @@ require("formatter").setup({
 				}
 			end,
 		},
-		-- rust = {
-		-- 	require("formatter.filetypes.rust").rustfmt,
-		-- },
 		python = {
 			require("formatter.filetypes.python").autopep8,
 		},
 		c = {
 			function()
 				return {
-					exe = 'clang-format --style="{BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4}"',
+					exe = c_cpp_format_cmd,
 					stdin = true,
 				}
 			end,
@@ -31,7 +31,7 @@ require("formatter").setup({
 		cpp = {
 			function()
 				return {
-					exe = 'clang-format --style="{BasedOnStyle: Google, IndentWidth: 4, TabWidth: 4}"',
+					exe = c_cpp_format_cmd,
 					stdin = true,
 				}
 			end,
