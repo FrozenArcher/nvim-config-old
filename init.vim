@@ -21,9 +21,3 @@ let g:neon_style = "dark"
 let g:neon_bold = v:true
 let g:neon_italic_keyword = v:true
 colorscheme neon
-
-" auto format on save
-augroup FormatAutogroup
-  autocmd!
-  autocmd BufWritePost * FormatWrite
-augroup END
